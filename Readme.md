@@ -1,6 +1,4 @@
-# Permutacion
-
-## Conceptos Clave
+# Permutación
 
 Una permutación es una reordenación de los elementos de un conjunto en un orden específico. Por ejemplo, las permutaciones de las letras "ABC" son "ABC", "ACB", "BAC", "BCA", "CAB", y "CBA".
 

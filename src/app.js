@@ -3,7 +3,6 @@ const app = express()
 
 // settings
 app.set('port', process.env.PORT || 3000)
-app.set('json spaces', 2)
 
 // middlewares
 app.use(express.json())

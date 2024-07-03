@@ -1,15 +1,13 @@
 const { Router } = require("express");
 const router = Router()
-const processingWords = require('../helpers/hiddenWords')
+const findHiddenWords = require('../helpers/findWords');
 
-router.post('/word', (req, res) => {
+router.post('/find-word', (req, res) => {
 
     const { Letters, qtyLetter } = req.body
-
-    const words = processingWords(Letters, qtyLetter)
-
+    const resultWords = findHiddenWords(Letters, qtyLetter)
     res.status(200).json({
-        data: words
+        data: resultWords
     })
 })
 
